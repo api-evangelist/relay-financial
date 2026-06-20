@@ -1,0 +1,111 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Relay
+providerId: relay-financial
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: true
+tags:
+- Business Banking
+- Fintech
+- SMB
+- Cash Flow
+- Bill Pay
+- Plans
+description: >-
+  Relay sells software subscription plans bundled with its business banking
+  product, not API access. Pricing is published as flat monthly subscription
+  tiers - Starter (free), Grow, and Scale - that unlock progressively more
+  cash-flow automation, higher savings APY, higher card cash-back, and more
+  checking accounts. These plans are reconciled against Relay's public pricing
+  page. There is no developer API plan because Relay does not expose a public
+  API.
+notes: >-
+  Plan names and prices reflect Relay's public pricing page as of 2026-06-20.
+  Relay previously offered Standard (free) and Pro ($30/mo) plans; current
+  tiers are Starter, Grow, and Scale. The Scale price ($90/mo) is noted on the
+  pricing page as discounted for a limited time (from $120/mo). Verify current
+  pricing on the Relay pricing page.
+sources:
+- https://relayfi.com/pricing/
+- https://support.relayfi.com/hc/en-us/articles/38053164262804-Overview-of-Relay-Subscription-Plans
+plans:
+- id: relay-starter
+  name: Starter
+  type: flat
+  description: >-
+    Free tier for solopreneurs and businesses just getting started, with the
+    essential banking and cash-flow tools. Includes up to 20 checking accounts
+    per business and accounting integrations.
+  entries:
+  - label: Starter Subscription
+    name: starter
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $0/mo
+    userMultiplied: false
+  elements:
+  - name: Up to 20 checking accounts
+  - name: Virtual and physical Visa debit cards
+  - name: Bill pay / accounts payable
+  - name: QuickBooks Online, Xero, and Gusto integrations
+  - name: Savings APY (1.11%)
+- id: relay-grow
+  name: Grow
+  type: flat
+  description: >-
+    For small teams with growing cash-flow complexity. Adds bill approval
+    workflows, bookkeeping automation, and batch vendor payments. Formerly the
+    Pro plan at the same monthly rate.
+  entries:
+  - label: Grow Subscription
+    name: grow
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $30/mo
+    userMultiplied: false
+  elements:
+  - name: Everything in Starter
+  - name: Bill approval workflows
+  - name: Bookkeeping automation
+  - name: Batch vendor payments
+  - name: Higher savings APY (1.75%)
+  - name: Credit card cash back (1.25%)
+- id: relay-scale
+  name: Scale
+  type: flat
+  description: >-
+    For larger teams that want to scale faster, with the most advanced
+    automation, best rates, and partner perks. Includes up to 50 checking
+    accounts and same-day ACH allotments.
+  entries:
+  - label: Scale Subscription
+    name: scale
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $90/mo (limited-time, from $120/mo)
+    userMultiplied: false
+  elements:
+  - name: Everything in Grow
+  - name: Up to 50 checking accounts
+  - name: 10 free monthly same-day ACH transfers
+  - name: Bill payment automation
+  - name: Cash flow forecasting
+  - name: Highest savings APY (3.00%)
+  - name: Credit card cash back (1.5%)
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

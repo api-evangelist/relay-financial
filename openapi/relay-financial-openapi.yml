@@ -1,0 +1,21 @@
+openapi: 3.0.1
+info:
+  title: Relay API
+  description: >-
+    Relay (relayfi.com) is an online business banking and cash-flow management
+    platform for small and medium-sized businesses. As of the 2026-06-20 review,
+    Relay does not publish a public or partner-facing developer API, OpenAPI
+    description, or documented HTTP endpoints for third-party developers. Its
+    integrations with QuickBooks Online, Xero, and Gusto are inbound, Relay-built
+    product integrations, and account-data sharing to other apps is brokered
+    through Plaid and Yodlee rather than a Relay-owned API. This document is an
+    intentionally empty OpenAPI placeholder; no endpoints are fabricated. It will
+    be populated if and when Relay publishes an official API specification.
+  termsOfService: https://relayfi.com/terms/
+  contact:
+    name: Relay Support
+    url: https://support.relayfi.com/hc/en-us
+  version: '0.0'
+servers: []
+paths: {}
+components: {}

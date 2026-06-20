@@ -1,0 +1,50 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Relay
+providerId: relay-financial
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Business Banking
+- Fintech
+- SMB
+- Cash Flow
+- Bill Pay
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Relay does not publish a public developer API, so there is no documented API
+  rate-limiting, quota, or throttling policy to reconcile. Any operational
+  limits that exist are product-level (for example, the number of checking
+  accounts per plan, batch payment sizes, or same-day ACH allotments) rather
+  than HTTP API rate limits. This artifact is unreconciled and records the
+  absence of a public API rate-limit policy.
+notes: >-
+  No API rate-limit documentation exists as of 2026-06-20 because Relay has no
+  public API. Product-tier limits (checking-account counts, same-day ACH
+  allotments) are captured in the plans artifact, not here. Revisit if Relay
+  launches a developer or partner API.
+sources:
+- https://relayfi.com/
+- https://relayfi.com/pricing/
+- https://support.relayfi.com/hc/en-us
+responseCodes:
+  throttled: not applicable
+limits:
+- name: Public API Rate Limit
+  scope: not applicable
+  metric: not applicable
+  limit: no public API documented
+  notes: Relay does not expose a public developer API; no HTTP rate limits are published.
+policies:
+- name: No Public API
+  description: >-
+    As of the review date Relay publishes no developer API and therefore no API
+    rate-limiting or quota policy. Product-tier feature limits are governed by
+    subscription plan, not API throttling.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

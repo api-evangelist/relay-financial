@@ -1,0 +1,85 @@
+aid: relay-financial
+name: Relay
+review:
+  question: Does Relay (relayfi.com) expose a documented public or partner developer API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Relay publishes no public REST API and no
+    event-streaming, webhook, SSE, or WebSocket surface for third-party
+    developers, so there is no real streaming interface to model.
+findings:
+  summary: |
+    Relay (relayfi.com) is an online business banking and cash-flow management
+    platform for SMBs, with banking services provided by Thread Bank, Member
+    FDIC. Its products are business checking and high-yield savings (up to
+    20-50 accounts), virtual and physical Visa debit/credit cards, accounts
+    payable / bill pay, and accounting integrations. As of the review date,
+    Relay does NOT publish a public or partner developer API, OpenAPI/Swagger
+    description, API reference, base URL, or authentication documentation.
+    Its "integrations" with QuickBooks Online, Xero, and Gusto are inbound,
+    Relay-built product integrations, and account-data sharing to third-party
+    money apps (Expensify, Freshbooks, Stessa, PayPal) is brokered through
+    Plaid and Yodlee rather than through any Relay-owned API. The OpenAPI
+    artifact in this repo is therefore an intentional empty placeholder
+    (paths: {}); no endpoints are fabricated.
+  disambiguation:
+    note: |
+      "Relay" is an overloaded name. This catalog covers Relay Financial /
+      Relay business banking at relayfi.com only. It is NOT relay.app (workflow
+      automation / human-in-the-loop tasks), NOT relay.dev / relay.link (a
+      cross-chain bridging and swap protocol whose docs at docs.relay.link DO
+      have an API), and NOT Relay messaging/walkie-talkie products. Search
+      results pointing to docs.relay.link belong to the crypto bridging Relay,
+      a different company, and were excluded.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API base URL or endpoints are documented for relayfi.com.
+    - protocol: Webhooks
+      scheme: https
+      documented: false
+      note: No developer webhook subscriptions are documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket or realtime streaming surface is documented.
+  apiAvailability:
+    publicApi: false
+    partnerApi: false
+    note: |
+      No evidence of a public or partner/invite-only API. Relay's developer-facing
+      footprint is limited to native accounting/payroll integrations it builds and
+      maintains, plus Plaid/Yodlee aggregator connectivity initiated by other apps.
+sources:
+  - url: https://relayfi.com/
+    type: Website
+    note: Product overview - checking/savings, Visa cards, bill pay; no API mentioned.
+  - url: https://relayfi.com/integrations/
+    type: Documentation
+    note: Lists QuickBooks, Xero, Gusto, Plaid, Yodlee, Collective integrations; no developer API.
+  - url: https://relayfi.com/pricing/
+    type: Documentation
+    note: Starter (free), Grow ($30/mo), Scale ($90/mo) subscription tiers; no API plan.
+  - url: https://support.relayfi.com/hc/en-us
+    type: Documentation
+    note: Help center covers product use and integrations; no API reference.
+  - url: https://apitracker.io/a/relayfi
+    type: Catalog
+    note: Third-party catalog entry shows no API styles, docs, reference, base URL, or auth for relayfi.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    apis.yml documents Relay's four product surfaces (Business Banking, Cards,
+    Bill Pay/AP, Accounting Integrations) as app features and inbound
+    integrations, explicitly stating no public developer API exists. The
+    OpenAPI placeholder, rate-limits artifact, and review record the absence
+    of a public API honestly; plans and finops capture the real, public
+    subscription pricing.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

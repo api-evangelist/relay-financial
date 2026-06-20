@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Relay API",
+    "version": "0.0",
+    "description": "Relay (relayfi.com) does not publish a public or partner developer API as of 2026-06-20. This Open Collection is an intentional empty placeholder and contains no requests. It will be populated if and when Relay publishes official, documented HTTP endpoints. Do not confuse Relay business banking with relay.link / docs.relay.link (a separate cross-chain bridging protocol)."
+  },
+  "items": []
+}

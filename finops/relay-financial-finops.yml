@@ -1,0 +1,86 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Relay
+providerId: relay-financial
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: true
+tags:
+- Business Banking
+- Fintech
+- SMB
+- Cash Flow
+- Bill Pay
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Relay spend. Relay does not bill usage-based API consumption
+  because it has no public API. Cost is a flat monthly software subscription
+  (Starter free, Grow $30/mo, Scale $90/mo) bundled with business banking;
+  some banking activities (for example, outgoing wires or expedited transfers
+  beyond plan allotments) may carry per-transaction fees set by the platform
+  and partner bank. This artifact frames those subscription and transaction
+  costs in FinOps terms.
+notes: >-
+  Subscription prices reflect Relay's public pricing page as of 2026-06-20.
+  Relay markets "$0 hidden fees" but specific per-transaction banking fees
+  (wires, expedited transfers) should be verified on the pricing and support
+  pages during reconciliation. There is no API metering to track.
+sources:
+- https://relayfi.com/pricing/
+- https://support.relayfi.com/hc/en-us
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Relay
+serviceCategory: Financial Services
+billingModel:
+  pricingCategory: Subscription-Based
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+  - Adjustment
+focusColumns:
+  ServiceName: Relay Business Banking
+  ServiceCategory: Financial Services
+  ProviderName: Relay
+  PublisherName: Relay
+  InvoiceIssuerName: Relay
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription-Based
+meters:
+- name: subscription_fee
+  description: Flat monthly software subscription per plan (Starter / Grow / Scale).
+  unit: months
+  aggregation: sum
+  dimensions:
+  - account
+  - plan
+- name: transaction_fees
+  description: Per-transaction banking fees beyond plan allotments (e.g., outgoing wires, expedited / same-day ACH transfers).
+  unit: transactions
+  aggregation: sum
+  dimensions:
+  - account
+  - transaction_type
+principles:
+- name: Visibility
+  description: Track the monthly Relay subscription tier and any per-transaction banking fees against budget.
+- name: Allocation
+  description: Use Relay's multiple checking accounts to envelope and allocate cash by purpose, team, or cost center.
+- name: Optimization
+  description: Match the plan tier to actual usage; higher tiers raise savings APY and card cash-back and add free same-day ACH allotments, which can offset the subscription cost.
+- name: Accountability
+  description: Assign account/card ownership and review subscription tier plus transaction fees periodically.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

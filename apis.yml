@@ -1,0 +1,107 @@
+aid: relay-financial
+url: https://raw.githubusercontent.com/api-evangelist/relay-financial/refs/heads/main/apis.yml
+name: Relay
+kind: company
+description: Relay is an online business banking and cash-flow management platform for
+  small and medium-sized businesses, offering up to 20-50 checking accounts, virtual
+  and physical Visa debit/credit cards, accounts payable and bill pay, and one-way
+  data integrations with accounting and payroll tools such as QuickBooks Online, Xero,
+  and Gusto. Banking services are provided by Thread Bank, Member FDIC. Relay does
+  not publish a public developer API; the surfaces below are product features and
+  inbound integrations rather than developer-facing APIs.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Business Banking
+- Fintech
+- SMB
+- Cash Flow
+- Bill Pay
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: relay-financial:relay-business-banking
+  name: Relay Business Banking
+  tags:
+  - Business Banking
+  - Checking
+  - Savings
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://relayfi.com/
+  properties:
+  - url: https://relayfi.com/
+    type: Documentation
+  - url: https://support.relayfi.com/hc/en-us
+    type: Documentation
+  description: Online business checking and high-yield savings, with up to 20-50 checking
+    accounts per business for envelope-style cash management. Delivered as an in-app
+    product feature; no public developer API is documented. Banking services provided
+    by Thread Bank, Member FDIC.
+- aid: relay-financial:relay-cards
+  name: Relay Cards
+  tags:
+  - Cards
+  - Virtual Cards
+  - Spend Management
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://relayfi.com/
+  properties:
+  - url: https://relayfi.com/
+    type: Documentation
+  - url: https://support.relayfi.com/hc/en-us
+    type: Documentation
+  description: Issuance of virtual and physical Visa debit and credit cards with per-card
+    spend limits, role-based controls, and real-time transaction tracking. Card management
+    is an in-app feature; no public card-issuing API is documented for third-party
+    developers.
+- aid: relay-financial:relay-bill-pay
+  name: Relay Bill Pay / Accounts Payable
+  tags:
+  - Bill Pay
+  - Accounts Payable
+  - Payments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://relayfi.com/
+  properties:
+  - url: https://relayfi.com/
+    type: Documentation
+  - url: https://support.relayfi.com/hc/en-us/articles/36861355472404-Uploading-Bill-Documentation-in-Relay
+    type: Documentation
+  description: Accounts payable and bill pay workflow - upload bills, route approvals,
+    and pay vendors via ACH, check, and wire, including batch vendor payments on higher
+    tiers. Operated through the Relay web and mobile apps; no public bill-pay API is
+    documented.
+- aid: relay-financial:relay-accounting-integrations
+  name: Relay Accounting Integrations
+  tags:
+  - Integrations
+  - Accounting
+  - QuickBooks
+  - Xero
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://relayfi.com/integrations/
+  properties:
+  - url: https://relayfi.com/integrations/
+    type: Documentation
+  - url: https://support.relayfi.com/hc/en-us/categories/360002513351-Integrations
+    type: Documentation
+  description: Native one-way data sync of transaction data and statements into accounting
+    and back-office tools - QuickBooks Online, Xero, and Gusto - plus account data
+    sharing to third-party money apps via Plaid and Yodlee. These are inbound product
+    integrations Relay maintains, not an outbound developer API Relay publishes.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/relayfi
+- type: Website
+  url: https://relayfi.com/
+- type: Documentation
+  url: https://support.relayfi.com/hc/en-us
+- type: Plans
+  url: plans/relay-financial-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/relay-financial-rate-limits.yml
+- type: FinOps
+  url: finops/relay-financial-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
