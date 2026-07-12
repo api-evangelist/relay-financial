@@ -90,6 +90,8 @@ apis:
     sharing to third-party money apps via Plaid and Yodlee. These are inbound product
     integrations Relay maintains, not an outbound developer API Relay publishes.
 common:
+- type: DomainSecurity
+  url: security/relay-financial-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/relayfi
 - type: Website
