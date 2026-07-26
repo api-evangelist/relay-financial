@@ -19,11 +19,6 @@ Relay is an online business banking and cash-flow management platform for small 
 
 ## APIs
 
-### Relay Business Banking
-
-Online business checking and high-yield savings, with up to 20-50 checking accounts per business for envelope-style cash management. Delivered as an in-app product feature; no public developer API is documented. Banking services provided by Thread Bank, Member FDIC.
-
-- **Human URL:** [https://relayfi.com/](https://relayfi.com/)
 
 #### Tags
 
@@ -36,11 +31,6 @@ Online business checking and high-yield savings, with up to 20-50 checking accou
 - [Documentation](https://relayfi.com/)
 - [Documentation](https://support.relayfi.com/hc/en-us)
 
-### Relay Cards
-
-Issuance of virtual and physical Visa debit and credit cards with per-card spend limits, role-based controls, and real-time transaction tracking. Card management is an in-app feature; no public card-issuing API is documented for third-party developers.
-
-- **Human URL:** [https://relayfi.com/](https://relayfi.com/)
 
 #### Tags
 
@@ -53,11 +43,6 @@ Issuance of virtual and physical Visa debit and credit cards with per-card spend
 - [Documentation](https://relayfi.com/)
 - [Documentation](https://support.relayfi.com/hc/en-us)
 
-### Relay Bill Pay / Accounts Payable
-
-Accounts payable and bill pay workflow - upload bills, route approvals, and pay vendors via ACH, check, and wire, including batch vendor payments on higher tiers. Operated through the Relay web and mobile apps; no public bill-pay API is documented.
-
-- **Human URL:** [https://relayfi.com/](https://relayfi.com/)
 
 #### Tags
 
@@ -70,11 +55,6 @@ Accounts payable and bill pay workflow - upload bills, route approvals, and pay 
 - [Documentation](https://relayfi.com/)
 - [Documentation](https://support.relayfi.com/hc/en-us/articles/36861355472404-Uploading-Bill-Documentation-in-Relay)
 
-### Relay Accounting Integrations
-
-Native one-way data sync of transaction data and statements into accounting and back-office tools - QuickBooks Online, Xero, and Gusto - plus account data sharing to third-party money apps via Plaid and Yodlee. These are inbound product integrations Relay maintains, not an outbound developer API Relay publishes.
-
-- **Human URL:** [https://relayfi.com/integrations/](https://relayfi.com/integrations/)
 
 #### Tags
 
