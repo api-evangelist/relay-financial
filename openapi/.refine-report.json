@@ -1,0 +1,14 @@
+{
+  "provider": "relay-financial",
+  "sources": [
+    "relay-financial-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived relay-financial-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
