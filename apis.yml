@@ -3,6 +3,17 @@ url: https://raw.githubusercontent.com/api-evangelist/relay-financial/refs/heads
 name: Relay
 kind: company
 description: Relay is an online business banking and cash-flow management platform for small and medium-sized businesses, offering up to 20-50 checking accounts, virtual and physical Visa debit/credit cards, accounts payable and bill pay, and one-way data integrations with accounting and payroll tools such as QuickBooks Online, Xero, and Gusto. Banking services are provided by Thread Bank, Member FDIC. Relay does not publish a public developer API; the surfaces below are product features and inbound integrations rather than developer-facing APIs.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
