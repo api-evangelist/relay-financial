@@ -40,10 +40,12 @@ tags_raw:
   - Cash Flow
   - Bill Pay
 created: '2026-06-20'
-modified: '2026-07-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://relayfi.com/blog/
+    type: Blog
   - type: DomainSecurity
     url: security/relay-financial-domain-security.yml
   - type: LinkedIn
