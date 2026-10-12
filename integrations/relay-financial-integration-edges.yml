@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/relay-financial/integrations
+- https://zapier.com/apps/relay/integrations
+- https://n8n.io/integrations/relay-financial/
+- https://composio.dev/toolkits/relay-financial
+- https://monid.ai/tools/relay-financial
+checked:
+- https://composio.dev/toolkits/relay-financial
+- https://monid.ai/tools/relay-financial
+- https://n8n.io/integrations/relay-financial/
+- https://zapier.com/apps/relay-financial/integrations
+- https://zapier.com/apps/relay/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
