@@ -1,4 +1,4 @@
-# Relay (relay-financial)
+# Relay
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,82 +66,111 @@
 
 Relay is an online business banking and cash-flow management platform for small and medium-sized businesses, offering up to 20-50 checking accounts, virtual and physical Visa debit/credit cards, accounts payable and bill pay, and one-way data integrations with accounting and payroll tools such as QuickBooks Online, Xero, and Gusto. Banking services are provided by Thread Bank, Member FDIC. Relay does not publish a public developer API; the surfaces below are product features and inbound integrations rather than developer-facing APIs.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/relay-financial/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/relay-financial/refs/heads/main/apis.yml)
+**Areas:** Business Banking · Fintech · Small Business · Cash Flow · Bill Pay
 
-## Tags
+## Relay on APIs.io
 
-- Business Banking
-- Fintech
-- SMB
-- Cash Flow
-- Bill Pay
+Everything profiled for Relay is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/relay-financial/](https://apis.io/providers/relay-financial/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [relay-financial](https://apis.io/servers/relay-financial/relay-financial/)
 
-- Business Banking
-- Checking
-- Savings
+#### Collections (1)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://relayfi.com/)
-- [Documentation](https://support.relayfi.com/hc/en-us)
+- [Relay API](https://apis.io/collections/relay-financial/open-relay-financial/)
 
+#### Security (1)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Cards
-- Virtual Cards
-- Spend Management
+- [Relay Financial Domain Security](https://apis.io/security/relay-financial/relay-financial-domain-security/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://relayfi.com/)
-- [Documentation](https://support.relayfi.com/hc/en-us)
+Published plans, tiers and prices.
 
+- [Relay Financial Plans Pricing](https://apis.io/plans/relay-financial/relay-financial-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Bill Pay
-- Accounts Payable
-- Payments
+Published request limits.
 
-#### Properties
+- [Relay Financial Rate Limits](https://apis.io/rate-limits/relay-financial/relay-financial-rate-limits/)
 
-- [Documentation](https://relayfi.com/)
-- [Documentation](https://support.relayfi.com/hc/en-us/articles/36861355472404-Uploading-Bill-Documentation-in-Relay)
+#### FinOps (1)
 
+What the API costs to run, by operation.
 
-#### Tags
+- [Relay Financial Finops](https://apis.io/finops/relay-financial/relay-financial-finops/)
 
-- Integrations
-- Accounting
-- QuickBooks
-- Xero
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://relayfi.com/integrations/)
-- [Documentation](https://support.relayfi.com/hc/en-us/categories/360002513351-Integrations)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/relayfi)
 - [Website](https://relayfi.com/)
 - [Documentation](https://support.relayfi.com/hc/en-us)
-- [Plans](plans/relay-financial-plans-pricing.yml)
-- [Rate Limits](rate-limits/relay-financial-rate-limits.yml)
-- [Fin Ops](finops/relay-financial-finops.yml)
+- [Blog](https://relayfi.com/blog/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 7.5** — minimal · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/relay-financial/](https://apis.io/providers/relay-financial/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Relay: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/relay-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
